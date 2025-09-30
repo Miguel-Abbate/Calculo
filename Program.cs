@@ -1,0 +1,12 @@
+﻿Console.Clear(); 
+Console.WriteLine("Insira o valor em Dolares  $");
+string Dolares = Console.ReadLine()!;
+double dollar = Convert.ToDouble(Dolares);
+Console.WriteLine("Insira a cotação do dia  R$");
+string cotação = Console.ReadLine()!;
+double cota = Convert.ToDouble(cotação);
+double conversão = dollar * cota;
+Console.Clear();
+Console.ForegroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine($" {conversão} Reais");
+Console.ResetColor();
